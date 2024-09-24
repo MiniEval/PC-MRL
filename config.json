@@ -1,0 +1,40 @@
+{
+  "GENERAL": {
+    "max_length": 128,
+    "human3.6m_skeleton": "/datasets/human3.6m/code/metadata.xml",
+    "human3.6m_path": "/datasets/human3.6m",
+    "lafan1_skeleton": "/datasets/lafan1/aiming1_subject1.bvh",
+    "lafan1_path": "/datasets/lafan1",
+    "cmu_skeleton": "/datasets/cmu/data/01/01_01.bvh",
+    "cmu_path_": "CMU dataset only used in evaluation",
+    "cmu_path": "/datasets/cmu/data/"
+  },
+  "PC-MRL": {
+    "batch_size": 12,
+    "src_n_points": 256,
+    "tgt_n_points": 1024,
+    "point_sampling_std": 0.05,
+    "n_bgroups": 5,
+    "d_model_": "Base PointTransformer dimension size, aggregated point cloud vector is 16x larger",
+    "d_model": 64,
+    "k_farthest_first": 8,
+    "temporal_n_heads": 4,
+    "temporal_n_layers": 6,
+    "learning_rate": 0.0001,
+    "warmup_steps": 500,
+    "knn_loss_k": 8
+  },
+  "CITL": {
+    "batch_size": 128,
+    "interp_keys_min": 5,
+    "interp_keys_max": 36,
+    "d_model_": "CITL dimension size",
+    "d_model": 512,
+    "n_heads": 8,
+    "n_layers": 6,
+    "aug_range": 0.1,
+    "learning_rate": 0.0001,
+    "warmup_steps": 10000,
+    "ckpt_pc-mrl": "./ckpt_pc-mrl/PCMRL50000.pt"
+  }
+}
