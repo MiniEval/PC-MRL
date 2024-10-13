@@ -3,6 +3,8 @@ Official implementation of [Motion Keyframe Interpolation for Any Human Skeleton
 
 ![PC-MRL Architecture](architecture.png)
 
+Pre-trained checkpoints can be found [here](https://drive.google.com/file/d/1GJ31cF_zugEePu_xfa-K_PLlRCV2p9cr/view?usp=sharing). Place these folders in the root directory.
+
 ## Training
 
 First, configure [LaFAN1](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) and [Human3.6M](http://vision.imar.ro/human3.6m/description.php) directory locations in `config.json`. In addition, one motion file from CMU MoCap is needed for the `cmu_skeleton` setting. Please use the [BVH version](https://sites.google.com/a/cgspeed.com/cgspeed/motion-capture?authuser=0) for this implementation
